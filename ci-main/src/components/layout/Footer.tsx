@@ -35,7 +35,7 @@ export default function Footer() {
         <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr 1fr', gap: 40, marginBottom: 48 }}>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 20 }}>
-              <img src="/clarity.png" alt="Clarity Intelligence" style={{ height: 32 }} />
+              <img src="/clarity.png" alt="Clarity Intelligence" style={{ height: 48 }} />
             </div>
             <p style={{ fontSize: 13, color: '#a09a94', lineHeight: 1.8, maxWidth: 260 }}>
               Workforce intelligence infrastructure for the AI-augmented era.
