@@ -1,4 +1,4 @@
-'use client'
+'use client' // v3
 import Link from 'next/link'
 import { Eyebrow, Rule, StatRow } from '@/components/ui'
 import { SUBDOMAINS } from '@/lib/constants'
