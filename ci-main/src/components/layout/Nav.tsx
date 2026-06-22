@@ -14,10 +14,10 @@ export default function Nav() {
     }}>
       <div style={{
         maxWidth: 1200, margin: '0 auto', padding: '0 32px',
-        display: 'flex', alignItems: 'center', height: 58,
+        display: 'flex', alignItems: 'center', height: 72,
       }}>
         <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 12, textDecoration: 'none' }}>
-          <img src="/clarity2.png" alt="Clarity Intelligence" style={{ height: 'clamp(44px, 5vw, 68px)', width: 'auto', display: 'block' }} />
+          <img src="/clarity2.png" alt="Clarity Intelligence" style={{ height: 'clamp(52px, 5vw, 72px)', width: 'auto', display: 'block' }} />
         </Link>
 
         <div style={{ flex: 1 }} />
