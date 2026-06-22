@@ -17,9 +17,7 @@ export default function PlatformPage() {
             { code: 'ALI™', name: 'AI Leverage Index', href: '/platform/ali', stats: '202 roles scored · 5 bands (AL1–AL5) · 31 function families', desc: 'The complement to CVI. Where CVI measures what AI cannot replace, ALI measures how effectively a person amplifies output through AI systems. Formula: AL_task = √(AWC × AOM). Four archetypes: Future Elite, Traditional Executive, AI-Native Operator, Transition Risk.' },
             { code: 'DPE', name: 'Dynamic Pay Engine', href: '/platform/dynamic-pay-engine', stats: 'Three-layer · Formula-driven · Employee-verifiable', desc: 'Contribution-based total rewards methodology. Monthly pay = Core Pay + Project Scope Pay + Annual Bonus. Every coefficient pre-declared, every KPI threshold defined before commitment. Skill mastery is a permanent financial event, not a career aspiration.' },
           ].map(item => (
-            <Link key={item.code} href={item.href} style={{ display: 'grid', gridTemplateColumns: '120px 1fr', background: 'var(--paper)', border: '1px solid var(--border)', transition: 'border-color 0.18s' }}
-              onMouseEnter={e => (e.currentTarget.style.borderColor = 'var(--gold)')}
-              onMouseLeave={e => (e.currentTarget.style.borderColor = 'var(--border)')}>
+            <Link key={item.code} href={item.href} style={{ display: 'grid', gridTemplateColumns: '120px 1fr', background: 'var(--paper)', border: '1px solid var(--border)', transition: 'border-color 0.18s' }}>
               <div style={{ padding: '28px 24px', borderRight: '1px solid var(--border)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                 <div style={{ fontSize: 28, fontWeight: 700, fontFamily: 'var(--serif)', color: 'var(--gold)' }}>{item.code}</div>
                 <div style={{ fontSize: 10, color: 'var(--muted)', fontWeight: 700, letterSpacing: '0.1em' }}>VIEW →</div>

@@ -32,9 +32,7 @@ export default function Nav() {
 
         <div style={{ display: 'flex', alignItems: 'center', gap: 0 }}>
           {NAV.map((item) => (
-            <div key={item.href} style={{ position: 'relative' }}
-              onMouseEnter={() => setOpen(item.href)}
-              onMouseLeave={() => setOpen(null)}>
+            <div key={item.href} style={{ position: 'relative' }}>
               <Link href={item.href} style={{
                 display: 'block', padding: '6px 14px',
                 fontSize: 12, fontWeight: 600, letterSpacing: '0.04em',

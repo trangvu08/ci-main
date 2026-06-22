@@ -1,0 +1,52 @@
+warning: in the working copy of 'src/app/page.tsx', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/src/app/page.tsx b/src/app/page.tsx[m
+[1mindex 68541b6..c22518b 100644[m
+[1m--- a/src/app/page.tsx[m
+[1m+++ b/src/app/page.tsx[m
+[36m@@ -1,12 +1,8 @@[m
+[32m+[m[32m'use client'[m
+ import Link from 'next/link'[m
+ import { Eyebrow, Rule, StatRow } from '@/components/ui'[m
+ import { SUBDOMAINS } from '@/lib/constants'[m
+[31m-import type { Metadata } from 'next'[m
+ [m
+[31m-export const metadata: Metadata = {[m
+[31m-  title: 'Clarity Intelligence — AI Workforce Intelligence',[m
+[31m-  description: 'Traditional benchmarks measure hierarchy. We measure what survives AI. Task-level workforce intelligence for Vietnam and Southeast Asia.',[m
+[31m-}[m
+ [m
+ const T = {[m
+   paper: 'var(--paper)', cream: 'var(--cream)', ink: 'var(--ink)',[m
+[36m@@ -107,9 +103,7 @@[m [mexport default function HomePage() {[m
+               { code: 'ALI™', name: 'AI Leverage Index', href: '/platform/ali', desc: '202 roles scored across 5 bands. Measures how effectively a person amplifies output through AI systems — the complement to CVI.' },[m
+               { code: 'DPE', name: 'Dynamic Pay Engine', href: '/platform/dynamic-pay-engine', desc: 'Contribution-based total rewards methodology. Core Pay + Project Scope + Annual Bonus. Formula-driven, employee-verifiable.' },[m
+             ].map(item => ([m
+[31m-              <Link key={item.code} href={item.href} style={{ background: T.cream, border: '1px solid var(--border)', padding: '28px 24px', display: 'block', transition: 'border-color 0.18s, background 0.18s' }}[m
+[31m-                onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--gold)'; e.currentTarget.style.background = 'var(--gold-bg)'; }}[m
+[31m-                onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.background = 'var(--cream)'; }}>[m
+[32m+[m[32m              <Link key={item.code} href={item.href} style={{ background: T.cream, border: '1px solid var(--border)', padding: '28px 24px', display: 'block', transition: 'border-color 0.18s, background 0.18s' }}>[m
+                 <div style={{ fontSize: 22, fontWeight: 700, fontFamily: T.serif, color: T.gold, marginBottom: 6 }}>{item.code}</div>[m
+                 <div style={{ fontSize: 12, fontWeight: 700, color: T.ink, marginBottom: 12, letterSpacing: '0.04em' }}>{item.name}</div>[m
+                 <p style={{ fontSize: 12, color: T.muted, lineHeight: 1.7, marginBottom: 16 }}>{item.desc}</p>[m
+[36m@@ -182,9 +176,7 @@[m [mexport default function HomePage() {[m
+               <Link key={prod.title} href={prod.href}[m
+                 target={prod.external ? '_blank' : undefined}[m
+                 rel={prod.external ? 'noopener noreferrer' : undefined}[m
+[31m-                style={{ background: T.cream, border: '1px solid var(--border)', padding: '28px 26px', display: 'block', borderTop: '3px solid var(--gold)', transition: 'background 0.18s' }}[m
+[31m-                onMouseEnter={e => (e.currentTarget.style.background = 'var(--gold-bg)')}[m
+[31m-                onMouseLeave={e => (e.currentTarget.style.background = 'var(--cream)')}>[m
+[32m+[m[32m                style={{ background: T.cream, border: '1px solid var(--border)', padding: '28px 26px', display: 'block', borderTop: '3px solid var(--gold)', transition: 'background 0.18s' }}>[m
+                 <div style={{ fontSize: 10, color: T.muted, fontWeight: 700, letterSpacing: '0.12em', marginBottom: 10 }}>{prod.audience.toUpperCase()}</div>[m
+                 <div style={{ fontSize: 16, fontWeight: 700, color: T.ink, marginBottom: 10 }}>{prod.title}{prod.external ? ' ↗' : ''}</div>[m
+                 <p style={{ fontSize: 13, color: T.muted, lineHeight: 1.7, marginBottom: 14 }}>{prod.desc}</p>[m
+[36m@@ -215,9 +207,7 @@[m [mexport default function HomePage() {[m
+               { tag: 'Data Dispatches', title: 'Connection vs Creation: a v7 finding', sub: 'Contrary to intuition, roles built on human connection (VT=3) are proving more AI-resilient than creative roles (VT=4).', href: '/writing/data-dispatches' },[m
+               { tag: 'WORA Working Group', title: 'Wave 2 completion: 31 function families', sub: 'The WORA-X database now covers 6,699 tasks and 1,208 roles. Notes on what changed between Wave 1 and Wave 2.', href: '/writing/wora-working-group' },[m
+             ].map(post => ([m
+[31m-              <Link key={post.title} href={post.href} style={{ background: T.paper, border: '1px solid var(--border)', padding: '28px 26px', display: 'block', transition: 'background 0.18s' }}[m
+[31m-                onMouseEnter={e => (e.currentTarget.style.background = 'var(--gold-bg)')}[m
+[31m-                onMouseLeave={e => (e.currentTarget.style.background = 'var(--paper)')}>[m
+[32m+[m[32m              <Link key={post.title} href={post.href} style={{ background: T.paper, border: '1px solid var(--border)', padding: '28px 26px', display: 'block', transition: 'background 0.18s' }}>[m
+                 <div style={{ fontSize: 10, color: T.gold, fontWeight: 700, letterSpacing: '0.14em', marginBottom: 12 }}>{post.tag.toUpperCase()}</div>[m
+                 <div style={{ fontSize: 15, fontWeight: 700, color: T.ink, fontFamily: T.serif, marginBottom: 10, lineHeight: 1.4 }}>{post.title}</div>[m
+                 <p style={{ fontSize: 12, color: T.muted, lineHeight: 1.7 }}>{post.sub}</p>[m

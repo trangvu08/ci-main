@@ -21,9 +21,7 @@ export default function ToolsPage() {
             <Link key={tool.title} href={tool.href}
               target={tool.ext ? '_blank' : undefined}
               rel={tool.ext ? 'noopener noreferrer' : undefined}
-              style={{ display: 'grid', gridTemplateColumns: '1fr auto', background: 'var(--paper)', border: '1px solid var(--border)', padding: '28px 30px', gap: 24, alignItems: 'center', transition: 'border-color 0.18s' }}
-              onMouseEnter={e => (e.currentTarget.style.borderColor = 'var(--gold)')}
-              onMouseLeave={e => (e.currentTarget.style.borderColor = 'var(--border)')}>
+              style={{ display: 'grid', gridTemplateColumns: '1fr auto', background: 'var(--paper)', border: '1px solid var(--border)', padding: '28px 30px', gap: 24, alignItems: 'center', transition: 'border-color 0.18s' }}>
               <div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8 }}>
                   <h2 style={{ fontSize: 16, fontFamily: 'var(--sans)', fontWeight: 700, color: 'var(--ink)' }}>{tool.title}{tool.ext ? ' ↗' : ''}</h2>

@@ -16,9 +16,7 @@ export default function WritingPage() {
             { tag: 'Data Dispatches', href: '/writing/data-dispatches', desc: 'Short, recurring. Quick quantitative observations from the WORA-X database. Things that surprised us. Can be weekly.' },
             { tag: 'WORA Working Group', href: '/writing/wora-working-group', desc: 'Community updates. Methodology notes, database changes, and discussions with practitioners who are building alongside the framework.' },
           ].map(col => (
-            <Link key={col.tag} href={col.href} style={{ background: 'var(--paper)', border: '1px solid var(--border)', borderTop: '3px solid var(--gold)', padding: '32px 28px', display: 'block', transition: 'background 0.18s' }}
-              onMouseEnter={e => (e.currentTarget.style.background = 'var(--gold-bg)')}
-              onMouseLeave={e => (e.currentTarget.style.background = 'var(--paper)')}>
+            <Link key={col.tag} href={col.href} style={{ background: 'var(--paper)', border: '1px solid var(--border)', borderTop: '3px solid var(--gold)', padding: '32px 28px', display: 'block', transition: 'background 0.18s' }}>
               <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--ink)', marginBottom: 14 }}>{col.tag}</div>
               <p style={{ fontSize: 13, color: 'var(--muted)', lineHeight: 1.7, marginBottom: 20 }}>{col.desc}</p>
               <span style={{ fontSize: 12, color: 'var(--gold)', fontWeight: 700 }}>Browse →</span>
