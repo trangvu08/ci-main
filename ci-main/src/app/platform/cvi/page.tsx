@@ -6,7 +6,7 @@ export default function CVIPage() {
   return (
     <>
       <PageHeader eyebrow="Platform · CVI™" title={<>Clarity Value Index</>}
-        sub="Five dimensions of human irreplaceability in AI-augmented organisations. Calibrated against 2.86M Mercer TRS Vietnam records. The primary contribution: within-level differentiation hierarchy cannot see." />
+        sub="Five dimensions of human irreplaceability in AI-augmented organisations. Calibrated against 2.86M Vietnam market records. The primary contribution: within-level differentiation hierarchy cannot see." />
       <StatRow items={[
         { value: '0.304', label: 'CVI alone R²', sub: 'Calibrated tier · no hierarchy input' },
         { value: '0.771', label: 'Full model R²', sub: 'CVI + level + year + industry + location' },
@@ -28,7 +28,7 @@ export default function CVIPage() {
           <Eyebrow>Exponent Rationale</Eyebrow>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 2, marginBottom: 56 }}>
             {[
-              { term: 'VT⁰·⁴', exp: '0.4', name: 'Value Type', rationale: 'Type multiplier, not magnitude. Connection/Creation amplify value but do not dominate the other axes. Connection (VT=3) is now more AI-resilient than Creation (VT=4) — a key v7 methodology shift.' },
+              { term: 'VT⁰·⁴', exp: '0.4', name: 'Value Type', rationale: 'Type multiplier, not magnitude. Connection/Creation amplify value but do not dominate the other axes. Connection (VT=3) is now more AI-resilient than Creation (VT=4) — a key methodology shift.' },
               { term: 'JQ', exp: '1.0', name: 'Judgment Quality', rationale: 'Primary driver in AI-augmented work. Judgment quality scales linearly with value creation. The ability to direct and evaluate AI output is the scarcest human skill as AI capability grows.' },
               { term: 'CD⁰·⁵', exp: '0.5', name: 'Context Depth', rationale: 'Diminishing returns (square root / concave). The 1→2 step adds proportionally more than the 4→5 step. Deep relational context is irreplaceable but subject to concavity.' },
               { term: 'AR⁰·⁶', exp: '0.6', name: 'Accountability Radius', rationale: 'Accountability has diminishing returns. The most defensible CVI axis as AI capability grows — AI cannot be held accountable for consequences the way human professionals can.' },

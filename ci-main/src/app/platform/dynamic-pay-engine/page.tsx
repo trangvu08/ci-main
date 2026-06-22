@@ -29,8 +29,8 @@ export default function DPEPage() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: 2, marginBottom: 48 }}>
             {[
               { n: '01', title: 'WORA-X Task Analysis', badge: 'AI Layer', desc: 'Map every task to its AI impact level. Identify what is human-irreplaceable and what is at risk of automation. 6,699 tasks · 1,208 roles · 117 calibrated-tier.' },
-              { n: '02', title: 'CVI v7 — Human Value Scoring', badge: 'Valuation', desc: 'Five axes: Value Type, Judgment Quality, Context Depth, Accountability Radius, Output Scope. CVI = VT⁰·⁴ × JQ × CD⁰·⁵ × AR⁰·⁶ × OS⁰·³' },
-              { n: '03', title: 'Mercer IPE Bridge', badge: 'Market Data', desc: 'Bidirectional CVI ↔ PC_LEVEL conversion. r = 0.946 across 2.86M records. Works with your existing Mercer data — no re-evaluation required.' },
+              { n: '02', title: 'CVI — Human Value Scoring', badge: 'Valuation', desc: 'Five axes: Value Type, Judgment Quality, Context Depth, Accountability Radius, Output Scope. CVI = VT⁰·⁴ × JQ × CD⁰·⁵ × AR⁰·⁶ × OS⁰·³' },
+              { n: '03', title: 'Job Grade Bridge', badge: 'Market Data', desc: 'Bidirectional CVI ↔ job grade conversion. r = 0.946 across 2.86M records. Works with your existing job grade data — no re-evaluation required.' },
               { n: '04', title: 'KPI Engine — BSC × Parmenter', badge: 'Measurement', desc: 'CVI axes drive KPI selection. Balanced Scorecard structure. Parmenter 10/80/10 framework: true KPIs are nonfinancial, daily/weekly, and action-forcing.' },
               { n: '05', title: 'Dynamic Pay Calculation', badge: 'Calculation', desc: 'Monthly: Core Pay + Project Scope. Annual: Performance Bonus via must-have gates + weighted KPI achievement. Option C logic — gate fail = bonus zero.' },
               { n: '06', title: 'Employee Self-Service', badge: 'Transparency', desc: 'Every employee models their own pay at 90%, 100%, or 120% achievement before committing. Annual total compensation statement.' },

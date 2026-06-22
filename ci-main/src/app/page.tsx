@@ -66,7 +66,7 @@ export default function HomePage() {
               </div>
             ))}
             <div style={{ fontSize: 10, color: T.dim, marginTop: 16, borderTop: '1px solid var(--border)', paddingTop: 12 }}>
-              CVI™ v7 · Vietnam Market 2026 · 2.86M Mercer TRS records validated
+              CVI™ · Vietnam Market 2026 · 2.86M market records validated
             </div>
           </div>
         </div>
@@ -76,7 +76,7 @@ export default function HomePage() {
       <StatRow items={[
         { value: '6,699', label: 'Tasks scored', sub: 'AI impact mapped at task level' },
         { value: '1,208', label: 'Roles analysed', sub: '117 calibrated · expert-estimated' },
-        { value: 'R²=0.771', label: 'Salary validation', sub: 'Full model · 2.86M TRS records · calibrated tier' },
+        { value: 'R²=0.771', label: 'Salary validation', sub: 'Full model · 2.86M market records · calibrated tier' },
         { value: '30%', label: 'CVI alone', sub: 'Salary variance without hierarchy input' },
       ]} />
 
@@ -204,7 +204,7 @@ export default function HomePage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 2 }}>
             {[
               { tag: 'Research Notes', title: 'The AI Compensation Gap: Vietnam 2026', sub: 'Why 40% of professional roles are mispriced relative to their AI-era human value — and which direction the error runs.', href: '/writing/research' },
-              { tag: 'Data Dispatches', title: 'Connection vs Creation: a v7 finding', sub: 'Contrary to intuition, roles built on human connection (VT=3) are proving more AI-resilient than creative roles (VT=4).', href: '/writing/data-dispatches' },
+              { tag: 'Data Dispatches', title: 'Connection vs Creation: a finding', sub: 'Contrary to intuition, roles built on human connection (VT=3) are proving more AI-resilient than creative roles (VT=4).', href: '/writing/data-dispatches' },
               { tag: 'WORA Working Group', title: 'Wave 2 completion: 31 function families', sub: 'The WORA-X database now covers 6,699 tasks and 1,208 roles. Notes on what changed between Wave 1 and Wave 2.', href: '/writing/wora-working-group' },
             ].map(post => (
               <Link key={post.title} href={post.href} style={{ background: T.paper, border: '1px solid var(--border)', padding: '28px 26px', display: 'block', transition: 'background 0.18s' }}>

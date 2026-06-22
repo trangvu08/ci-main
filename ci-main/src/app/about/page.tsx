@@ -18,7 +18,7 @@ export default function AboutPage() {
           </div>
           <Eyebrow>The problem we're solving</Eyebrow>
           <p style={{ fontSize: 15, color: 'var(--muted)', lineHeight: 1.85, marginBottom: 22 }}>
-            Traditional job evaluation frameworks — Mercer IPE, Hay/Korn Ferry — measure job size: how many people report to you, how large is your budget. This worked when human value was determined by information access and resource control.
+            Traditional job evaluation frameworks — Hay/Korn Ferry — measure job size: how many people report to you, how large is your budget. This worked when human value was determined by information access and resource control.
           </p>
           <p style={{ fontSize: 15, color: 'var(--muted)', lineHeight: 1.85, marginBottom: 22 }}>
             In AI-augmented organisations, AI has access to more information than any individual — making information access a weak differentiator. What remains scarce and valuable is not what you know, but what you can do with what you know that AI cannot.
@@ -30,7 +30,7 @@ export default function AboutPage() {
             {[
               { t: 'Methodology-first', b: 'Every engagement starts from real workflow data — practitioner interviews, actual workflows, every task scored against a published rubric. Not JDs, not generic surveys.' },
               { t: 'Vietnam-calibrated', b: 'Built for Vietnam\'s specific context: labour law, SBV/MOF regulation, GCC dynamics, and AI adoption pace meaningfully different from global benchmarks.' },
-              { t: 'Judgment-informed', b: 'Fully documented rubric, calibrated against 2.86M Mercer TRS records. Transparent about what is expert judgment versus what is algorithmic output.' },
+              { t: 'Judgment-informed', b: 'Fully documented rubric, calibrated against 2.86M market records. Transparent about what is expert judgment versus what is algorithmic output.' },
               { t: 'Falsifiable', b: 'Validation is designed to be falsifiable. If deployment data contradicts the framework\'s predictions after 24 months, the scoring rubric will be revised.' },
             ].map(({ t, b }) => (
               <div key={t} style={{ background: 'var(--paper)', border: '1px solid var(--border)', padding: '24px 26px' }}>

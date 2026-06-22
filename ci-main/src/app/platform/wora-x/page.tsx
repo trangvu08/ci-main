@@ -4,7 +4,7 @@ export const metadata: Metadata = { title: 'WORA-X — Task Taxonomy', descripti
 
 export default function WORAPage() {
   const axes = [
-    { code: 'VT', name: 'Value Type', scale: '1–4', desc: 'What kind of value is created. Execution (AI replaces) → Judgment (AI assists) → Connection (AI cannot replicate) → Creation (AI drafts, human curates). Key v7 finding: Connection (VT=3) is more AI-resilient than Creation (VT=4).' },
+    { code: 'VT', name: 'Value Type', scale: '1–4', desc: 'What kind of value is created. Execution (AI replaces) → Judgment (AI assists) → Connection (AI cannot replicate) → Creation (AI drafts, human curates). Key finding: Connection (VT=3) is more AI-resilient than Creation (VT=4).' },
     { code: 'JQ', name: 'Judgment Quality', scale: '1–5', desc: 'Ability to direct and evaluate AI output. The scarce human skill becomes knowing when AI is right, when it is wrong, and how to frame problems AI should not solve alone.' },
     { code: 'CD', name: 'Context Depth', scale: '1–5', desc: 'Irreplaceable context AI cannot access from any data source: relationship history, political context, unwritten rules, tacit knowledge accumulated over years of specific experience.' },
     { code: 'AR', name: 'Accountability Radius', scale: '1–5', desc: 'Personal consequences when outcomes fail. The most defensible CVI axis as AI capability grows. The most direct proxy for hierarchy in a flat organisation.' },

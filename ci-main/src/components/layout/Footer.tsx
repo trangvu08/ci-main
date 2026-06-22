@@ -59,7 +59,7 @@ export default function Footer() {
         </div>
         <div style={{ borderTop: '1px solid #2a2520', paddingTop: 20, display: 'flex', justifyContent: 'space-between', fontSize: 11, color: '#6b6560', flexWrap: 'wrap', gap: 8 }}>
           <span>© 2026 Clarity Intelligence. All rights reserved.</span>
-          <span>WORA-X Master Database v7.3 · 6,699 tasks · 1,208 roles · 31 function families</span>
+          <span>WORA-X Master Database · 6,699 tasks · 1,208 roles · 31 function families</span>
         </div>
       </div>
     </footer>

@@ -9,7 +9,7 @@ export default function ToolsPage() {
   return (
     <>
       <PageHeader eyebrow="Tools" title="Free intelligence tools, powered by WORA data."
-        sub="All tools are grounded in WORA-X Master Database v7.3 — 6,699 tasks, 1,208 roles, 31 function families. No account required." />
+        sub="All tools are grounded in WORA-X Master Database — 6,699 tasks, 1,208 roles, 31 function families. No account required." />
       <Rule />
       <section style={{ padding: '80px 32px', background: 'var(--cream)' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 2 }}>
