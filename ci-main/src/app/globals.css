@@ -37,3 +37,16 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 400; }
   padding: 0; margin: -1px; overflow: hidden;
   clip: rect(0,0,0,0); border: 0;
 }
+
+/* Hover effects via CSS (replaces JS onMouseEnter/Leave) */
+a { transition: opacity 0.15s; }
+a:hover { opacity: 0.8; }
+
+.card-hover { transition: border-color 0.18s, background 0.18s; }
+.card-hover:hover { border-color: var(--gold) !important; background: var(--gold-bg) !important; }
+
+.nav-link { transition: color 0.15s; }
+.nav-link:hover { color: var(--gold) !important; }
+
+.btn-gold { background: var(--gold); transition: background 0.18s; }
+.btn-gold:hover { background: var(--ink) !important; }

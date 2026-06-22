@@ -103,9 +103,7 @@ export default function HomePage() {
               { code: 'ALI™', name: 'AI Leverage Index', href: '/platform/ali', desc: '202 roles scored across 5 bands. Measures how effectively a person amplifies output through AI systems — the complement to CVI.' },
               { code: 'DPE', name: 'Dynamic Pay Engine', href: '/platform/dynamic-pay-engine', desc: 'Contribution-based total rewards methodology. Core Pay + Project Scope + Annual Bonus. Formula-driven, employee-verifiable.' },
             ].map(item => (
-              <Link key={item.code} href={item.href} style={{ background: T.cream, border: '1px solid var(--border)', padding: '28px 24px', display: 'block', transition: 'border-color 0.18s, background 0.18s' }}
-                onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--gold)'; e.currentTarget.style.background = 'var(--gold-bg)'; }}
-                onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.background = 'var(--cream)'; }}>
+              <Link key={item.code} href={item.href} style={{ background: T.cream, border: '1px solid var(--border)', padding: '28px 24px', display: 'block', transition: 'border-color 0.18s, background 0.18s' }}}}>
                 <div style={{ fontSize: 22, fontWeight: 700, fontFamily: T.serif, color: T.gold, marginBottom: 6 }}>{item.code}</div>
                 <div style={{ fontSize: 12, fontWeight: 700, color: T.ink, marginBottom: 12, letterSpacing: '0.04em' }}>{item.name}</div>
                 <p style={{ fontSize: 12, color: T.muted, lineHeight: 1.7, marginBottom: 16 }}>{item.desc}</p>
@@ -178,9 +176,7 @@ export default function HomePage() {
               <Link key={prod.title} href={prod.href}
                 target={prod.external ? '_blank' : undefined}
                 rel={prod.external ? 'noopener noreferrer' : undefined}
-                style={{ background: T.cream, border: '1px solid var(--border)', padding: '28px 26px', display: 'block', borderTop: '3px solid var(--gold)', transition: 'background 0.18s' }}
-                onMouseEnter={e => (e.currentTarget.style.background = 'var(--gold-bg)')}
-                onMouseLeave={e => (e.currentTarget.style.background = 'var(--cream)')}>
+                style={{ background: T.cream, border: '1px solid var(--border)', padding: '28px 26px', display: 'block', borderTop: '3px solid var(--gold)', transition: 'background 0.18s' }}>
                 <div style={{ fontSize: 10, color: T.muted, fontWeight: 700, letterSpacing: '0.12em', marginBottom: 10 }}>{prod.audience.toUpperCase()}</div>
                 <div style={{ fontSize: 16, fontWeight: 700, color: T.ink, marginBottom: 10 }}>{prod.title}{prod.external ? ' ↗' : ''}</div>
                 <p style={{ fontSize: 13, color: T.muted, lineHeight: 1.7, marginBottom: 14 }}>{prod.desc}</p>
@@ -211,9 +207,7 @@ export default function HomePage() {
               { tag: 'Data Dispatches', title: 'Connection vs Creation: a v7 finding', sub: 'Contrary to intuition, roles built on human connection (VT=3) are proving more AI-resilient than creative roles (VT=4).', href: '/writing/data-dispatches' },
               { tag: 'WORA Working Group', title: 'Wave 2 completion: 31 function families', sub: 'The WORA-X database now covers 6,699 tasks and 1,208 roles. Notes on what changed between Wave 1 and Wave 2.', href: '/writing/wora-working-group' },
             ].map(post => (
-              <Link key={post.title} href={post.href} style={{ background: T.paper, border: '1px solid var(--border)', padding: '28px 26px', display: 'block', transition: 'background 0.18s' }}
-                onMouseEnter={e => (e.currentTarget.style.background = 'var(--gold-bg)')}
-                onMouseLeave={e => (e.currentTarget.style.background = 'var(--paper)')}>
+              <Link key={post.title} href={post.href} style={{ background: T.paper, border: '1px solid var(--border)', padding: '28px 26px', display: 'block', transition: 'background 0.18s' }}>
                 <div style={{ fontSize: 10, color: T.gold, fontWeight: 700, letterSpacing: '0.14em', marginBottom: 12 }}>{post.tag.toUpperCase()}</div>
                 <div style={{ fontSize: 15, fontWeight: 700, color: T.ink, fontFamily: T.serif, marginBottom: 10, lineHeight: 1.4 }}>{post.title}</div>
                 <p style={{ fontSize: 12, color: T.muted, lineHeight: 1.7 }}>{post.sub}</p>
