@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { SUBDOMAINS } from '@/lib/constants'
 
 const cols = [
   { title: 'Platform', links: [
@@ -9,13 +8,13 @@ const cols = [
     { l: 'ALI', h: '/platform/ali' },
   ]},
   { title: 'Products', links: [
-    { l: 'Salary Check VN ↗', h: 'https://salary.clarityintelligence.co', ext: true },
+    { l: 'Salary Check VN ↗', h: 'https://salary.clarityintelligence.co' },
     { l: 'BOD Intelligence', h: '/products/bod-intel' },
-    { l: 'Rewards Engine ↗', h: 'https://rewards.clarityintelligence.co', ext: true },
+    { l: 'Rewards Engine ↗', h: 'https://rewards.clarityintelligence.co' },
   ]},
   { title: 'Tools', links: [
-    { l: 'Homemaker Value Index ↗', h: 'https://tools.clarityintelligence.co/homemaker-value-index', ext: true },
-    { l: 'Job Pricing Calculator ↗', h: 'https://tools.clarityintelligence.co/job-pricing', ext: true },
+    { l: 'Homemaker Value Index ↗', h: 'https://tools.clarityintelligence.co/homemaker-value-index' },
+    { l: 'Job Pricing Calculator ↗', h: 'https://tools.clarityintelligence.co/job-pricing' },
     { l: 'Judgment Premium Report', h: '/tools/judgment-premium' },
   ]},
   { title: 'Writing', links: [
@@ -31,14 +30,14 @@ const cols = [
 
 export default function Footer() {
   return (
-    <footer style={{ background: 'var(--ink)', color: 'var(--paper)', padding: '56px 32px 32px' }}>
+    <footer style={{ background: '#0d0d0d', color: '#f5f3ee', padding: '56px 32px 32px' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
         <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr 1fr', gap: 40, marginBottom: 48 }}>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 20 }}>
-              <div style={{ width: 30, height: 30, background: 'linear-gradient(135deg, var(--gold) 0%, #8a6320 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <div style={{ width: 30, height: 30, background: 'linear-gradient(135deg, #b8892a 0%, #8a6320 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2 8h4M6 8V4M6 8v4M8.5 8H11m0 0l2.5-2M11 8l2.5 2" stroke="var(--ink)" strokeWidth="1.6" strokeLinecap="round"/>
+                  <path d="M2 8h4M6 8V4M6 8v4M8.5 8H11m0 0l2.5-2M11 8l2.5 2" stroke="#0d0d0d" strokeWidth="1.6" strokeLinecap="round"/>
                 </svg>
               </div>
               <div>
@@ -59,10 +58,7 @@ export default function Footer() {
               <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.2em', color: '#a09a94', marginBottom: 16 }}>{col.title.toUpperCase()}</div>
               {col.links.map(lk => (
                 <Link key={lk.l} href={lk.h}
-                  target={(lk as any).ext ? '_blank' : undefined}
-                  style={{ display: 'block', fontSize: 13, color: '#a09a94', marginBottom: 10, transition: 'color 0.15s' }}
-                  onMouseEnter={e => (e.currentTarget.style.color = 'var(--gold-l)')}
-                  onMouseLeave={e => (e.currentTarget.style.color = '#a09a94')}>
+                  style={{ display: 'block', fontSize: 13, color: '#a09a94', marginBottom: 10, textDecoration: 'none' }}>
                   {lk.l}
                 </Link>
               ))}
