@@ -19,11 +19,10 @@ export default function Nav() {
         <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 10, userSelect: 'none', textDecoration: 'none' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 10, cursor: 'pointer' }}>
             <div style={{ width: 28, height: 28, background: '#0d0d0d', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <line x1="7" y1="2" x2="7" y2="12" stroke="#b8892a" strokeWidth="1.4" strokeLinecap="round"/>
-                <line x1="2" y1="7" x2="5" y2="7" stroke="#b8892a" strokeWidth="1.4" strokeLinecap="round"/>
-                <line x1="9" y1="7" x2="12" y2="7" stroke="#b8892a" strokeWidth="1.4" strokeLinecap="round"/>
-                <circle cx="7" cy="7" r="1.5" fill="#b8892a"/>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <line x1="4" y1="3" x2="4" y2="13" stroke="#b8892a" strokeWidth="1.6" strokeLinecap="round"/>
+                <line x1="12" y1="3" x2="12" y2="13" stroke="#b8892a" strokeWidth="1.6" strokeLinecap="round"/>
+                <circle cx="8" cy="8" r="2" fill="#b8892a"/>
               </svg>
             </div>
             <div style={{ lineHeight: 1 }}>
