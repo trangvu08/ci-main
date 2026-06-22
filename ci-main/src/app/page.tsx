@@ -103,7 +103,7 @@ export default function HomePage() {
               { code: 'ALI™', name: 'AI Leverage Index', href: '/platform/ali', desc: '202 roles scored across 5 bands. Measures how effectively a person amplifies output through AI systems — the complement to CVI.' },
               { code: 'DPE', name: 'Dynamic Pay Engine', href: '/platform/dynamic-pay-engine', desc: 'Contribution-based total rewards methodology. Core Pay + Project Scope + Annual Bonus. Formula-driven, employee-verifiable.' },
             ].map(item => (
-              <Link key={item.code} href={item.href} style={{ background: T.cream, border: '1px solid var(--border)', padding: '28px 24px', display: 'block', transition: 'border-color 0.18s, background 0.18s' }}}}>
+              <Link key={item.code} href={item.href} style={{ background: T.cream, border: '1px solid var(--border)', padding: '28px 24px', display: 'block', transition: 'border-color 0.18s, background 0.18s' }}>
                 <div style={{ fontSize: 22, fontWeight: 700, fontFamily: T.serif, color: T.gold, marginBottom: 6 }}>{item.code}</div>
                 <div style={{ fontSize: 12, fontWeight: 700, color: T.ink, marginBottom: 12, letterSpacing: '0.04em' }}>{item.name}</div>
                 <p style={{ fontSize: 12, color: T.muted, lineHeight: 1.7, marginBottom: 16 }}>{item.desc}</p>
