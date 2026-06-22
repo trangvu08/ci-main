@@ -35,7 +35,20 @@ export default function Footer() {
         <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr 1fr', gap: 40, marginBottom: 48 }}>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 20 }}>
-              <img src="/clarity.png" alt="Clarity Intelligence" style={{ height: 48, width: 'auto' }} />
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, cursor: 'pointer' }}>
+                <div style={{ width: 28, height: 28, background: '#f5f3ee', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <line x1="7" y1="2" x2="7" y2="12" stroke="#b8892a" strokeWidth="1.4" strokeLinecap="round"/>
+                    <line x1="2" y1="7" x2="5" y2="7" stroke="#b8892a" strokeWidth="1.4" strokeLinecap="round"/>
+                    <line x1="9" y1="7" x2="12" y2="7" stroke="#b8892a" strokeWidth="1.4" strokeLinecap="round"/>
+                    <circle cx="7" cy="7" r="1.5" fill="#b8892a"/>
+                  </svg>
+                </div>
+                <div style={{ lineHeight: 1 }}>
+                  <div style={{ fontSize: 13, fontWeight: 700, letterSpacing: '0.2em', color: '#f5f3ee', fontFamily: 'var(--sans)' }}>CLARITY</div>
+                  <div style={{ fontSize: 8, fontWeight: 400, letterSpacing: '0.3em', color: '#f5f3ee', fontFamily: 'var(--sans)' }}>INTELLIGENCE</div>
+                </div>
+              </div>
             </div>
             <p style={{ fontSize: 13, color: '#a09a94', lineHeight: 1.8, maxWidth: 260 }}>
               Workforce intelligence infrastructure for the AI-augmented era.
