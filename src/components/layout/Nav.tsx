@@ -17,15 +17,7 @@ export default function Nav() {
         display: 'flex', alignItems: 'center', height: 58,
       }}>
         <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 10, userSelect: 'none', textDecoration: 'none' }}>
-          <div style={{ width: 30, height: 30, background: 'linear-gradient(135deg, #0d0d0d 0%, #3a3028 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M2 8h4M6 8V4M6 8v4M8.5 8H11m0 0l2.5-2M11 8l2.5 2" stroke="#b8892a" strokeWidth="1.6" strokeLinecap="round"/>
-            </svg>
-          </div>
-          <div>
-            <div style={{ fontSize: 13, fontWeight: 700, letterSpacing: '0.18em', color: '#0d0d0d', lineHeight: 1 }}>CLARITY</div>
-            <div style={{ fontSize: 8, fontWeight: 500, letterSpacing: '0.28em', color: '#6b6560', lineHeight: 1.4 }}>INTELLIGENCE</div>
-          </div>
+          <img src="/clarity.png" alt="Clarity Intelligence" style={{ height: 32 }} />
         </Link>
 
         <div style={{ flex: 1 }} />
