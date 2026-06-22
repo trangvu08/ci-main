@@ -35,15 +35,7 @@ export default function Footer() {
         <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr 1fr', gap: 40, marginBottom: 48 }}>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 20 }}>
-              <div style={{ width: 30, height: 30, background: 'linear-gradient(135deg, #b8892a 0%, #8a6320 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M2 8h4M6 8V4M6 8v4M8.5 8H11m0 0l2.5-2M11 8l2.5 2" stroke="#0d0d0d" strokeWidth="1.6" strokeLinecap="round"/>
-                </svg>
-              </div>
-              <div>
-                <div style={{ fontSize: 13, fontWeight: 700, letterSpacing: '0.18em', lineHeight: 1 }}>CLARITY</div>
-                <div style={{ fontSize: 8, fontWeight: 500, letterSpacing: '0.28em', color: '#a09a94', lineHeight: 1.4 }}>INTELLIGENCE</div>
-              </div>
+              <img src="/clarity.png" alt="Clarity Intelligence" style={{ height: 32 }} />
             </div>
             <p style={{ fontSize: 13, color: '#a09a94', lineHeight: 1.8, maxWidth: 260 }}>
               Workforce intelligence infrastructure for the AI-augmented era.
