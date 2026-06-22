@@ -17,7 +17,7 @@ export default function Nav() {
         display: 'flex', alignItems: 'center', height: 58,
       }}>
         <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 10, userSelect: 'none', textDecoration: 'none' }}>
-          <img src="/clarity.png" alt="Clarity Intelligence" style={{ height: 48, width: 'auto' }} />
+          <img src="/clarity.png" alt="Clarity Intelligence" style={{ height: 'clamp(32px, 4vw, 52px)', width: 'auto', display: 'block' }} />
         </Link>
 
         <div style={{ flex: 1 }} />
