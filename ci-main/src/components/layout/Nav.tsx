@@ -16,19 +16,15 @@ export default function Nav() {
         maxWidth: 1200, margin: '0 auto', padding: '0 32px',
         display: 'flex', alignItems: 'center', height: 58,
       }}>
-        <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 10, userSelect: 'none', textDecoration: 'none' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10, cursor: 'pointer' }}>
-            <div style={{ width: 28, height: 28, background: '#0d0d0d', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <line x1="4" y1="3" x2="4" y2="13" stroke="#b8892a" strokeWidth="1.6" strokeLinecap="round"/>
-                <line x1="12" y1="3" x2="12" y2="13" stroke="#b8892a" strokeWidth="1.6" strokeLinecap="round"/>
-                <circle cx="8" cy="8" r="2" fill="#b8892a"/>
-              </svg>
-            </div>
-            <div style={{ lineHeight: 1 }}>
-              <div style={{ fontSize: 13, fontWeight: 700, letterSpacing: '0.2em', color: '#0d0d0d', fontFamily: 'var(--sans)' }}>CLARITY</div>
-              <div style={{ fontSize: 8, fontWeight: 400, letterSpacing: '0.3em', color: '#6b6560', fontFamily: 'var(--sans)' }}>INTELLIGENCE</div>
-            </div>
+        <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 12, textDecoration: 'none' }}>
+          <svg width="24" height="32" viewBox="0 0 24 32" fill="none">
+            <rect x="2" y="4" width="2" height="24" rx="1" fill="#0d0d0d"/>
+            <rect x="20" y="4" width="2" height="24" rx="1" fill="#0d0d0d"/>
+            <circle cx="12" cy="16" r="3.5" fill="#0d0d0d"/>
+          </svg>
+          <div style={{ lineHeight: 1 }}>
+            <div style={{ fontSize: 13, fontWeight: 700, letterSpacing: '0.2em', color: '#0d0d0d', fontFamily: 'var(--sans)' }}>CLARITY</div>
+            <div style={{ fontSize: 8, fontWeight: 400, letterSpacing: '0.3em', color: '#6b6560', fontFamily: 'var(--sans)' }}>INTELLIGENCE</div>
           </div>
         </Link>
 
